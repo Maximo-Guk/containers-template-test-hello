@@ -18,6 +18,17 @@ Outside of this repo, you can start a new project with this template using [C3](
 npm create cloudflare@latest -- --template=cloudflare/templates/containers-template
 ```
 
+## Prerequisites
+
+Before you begin, make sure you have the following installed and ready:
+
+- [Node.js](https://nodejs.org/) v18 or later, with `npm` (or your preferred package manager)
+- A [Cloudflare account](https://dash.cloudflare.com/sign-up)
+- [Docker](https://docs.docker.com/get-started/get-docker/) installed and running locally — Wrangler uses it to build and run your container image during local development and deployment
+
+> [!NOTE]
+> Cloudflare Containers require a paid Workers plan. See the [Containers documentation](https://developers.cloudflare.com/containers/) for current availability and pricing details.
+
 ## Getting Started
 
 First, run:
