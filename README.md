@@ -43,6 +43,16 @@ Open [http://localhost:8787](http://localhost:8787) with your browser to see the
 You can start editing your Worker by modifying `src/index.ts` and you can start
 editing your Container by editing the content of `container_src`.
 
+## Project Structure
+
+| Path                        | Description                                                        |
+| :-------------------------- | :----------------------------------------------------------------- |
+| `src/`                      | Worker code that launches, routes to, and load-balances containers |
+| `container_src/`            | Source for the containerized app that runs inside each container   |
+| `Dockerfile`                | Build definition for the container image                           |
+| `wrangler.jsonc`            | Wrangler configuration, including container bindings               |
+| `worker-configuration.d.ts` | Generated TypeScript types for your Worker bindings                |
+
 ## Deploying To Production
 
 | Command          | Action                                |
